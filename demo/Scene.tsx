@@ -1,4 +1,3 @@
-import React from "react";
 import { Canvas } from "@react-three/fiber";
 import { PerspectiveCamera, Plane } from "@react-three/drei";
 import VrmAvatar from "../lib/VrmAvatar";

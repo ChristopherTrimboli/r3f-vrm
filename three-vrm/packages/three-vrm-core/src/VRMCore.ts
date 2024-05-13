@@ -73,7 +73,7 @@ export class VRMCore {
     this.humanoid.update();
 
     if (this.lookAt) {
-      this.lookAt.update(delta);
+      this.lookAt.update();
     }
 
     if (this.expressionManager) {

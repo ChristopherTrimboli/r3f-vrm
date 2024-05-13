@@ -470,7 +470,7 @@ export class MToonMaterial extends THREE.ShaderMaterial {
 
       const defines =
         Object.entries({ ...this._generateDefines(), ...this.defines })
-          .filter(([token, macro]) => !!macro)
+          .filter((key) => !!key[1])
           .map(([token, macro]) => `#define ${token} ${macro}`)
           .join('\n') + '\n';
 

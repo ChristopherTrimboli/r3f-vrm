@@ -54,16 +54,16 @@ export class VRMMetaLoaderPlugin implements GLTFLoaderPlugin {
   }
 
   public async afterRoot(gltf: GLTF): Promise<void> {
-    gltf.userData.vrmMeta = await this._import(gltf);
+    gltf.userData.vrmMeta = await this._import();
   }
 
-  private async _import(gltf: GLTF): Promise<VRMMeta | null> {
-    const v1Result = await this._v1Import(gltf);
+  private async _import(): Promise<VRMMeta | null> {
+    const v1Result = await this._v1Import();
     if (v1Result != null) {
       return v1Result;
     }
 
-    const v0Result = await this._v0Import(gltf);
+    const v0Result = await this._v0Import();
     if (v0Result != null) {
       return v0Result;
     }
@@ -71,7 +71,7 @@ export class VRMMetaLoaderPlugin implements GLTFLoaderPlugin {
     return null;
   }
 
-  private async _v1Import(gltf: GLTF): Promise<VRM1Meta | null> {
+  private async _v1Import(): Promise<VRM1Meta | null> {
     const json = this.parser.json as GLTFSchema.IGLTF;
 
     // early abort if it doesn't use vrm
@@ -132,7 +132,7 @@ export class VRMMetaLoaderPlugin implements GLTFLoaderPlugin {
     };
   }
 
-  private async _v0Import(gltf: GLTF): Promise<VRM0Meta | null> {
+  private async _v0Import(): Promise<VRM0Meta | null> {
     const json = this.parser.json as GLTFSchema.IGLTF;
 
     // early abort if it doesn't use vrm

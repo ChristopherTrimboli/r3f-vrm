@@ -23,6 +23,10 @@
     "three-stdlib": "^2.30.0"
   },
   "devDependencies": {
+    "@pixiv/types-vrmc-materials-hdr-emissive-multiplier-1.0": "^2.1.1",
+    "@pixiv/types-vrmc-materials-mtoon-1.0": "^2.1.1",
+    "@pixiv/types-vrmc-node-constraint-1.0": "^2.1.1",
+    "@pixiv/types-vrmc-springbone-1.0": "^2.1.1",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
     "@types/react-native": "^0.73.0",

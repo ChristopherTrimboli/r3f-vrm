@@ -227,7 +227,7 @@ export class VRMSpringBoneLoaderPlugin implements GLTFLoaderPlugin {
     const colliderGroups = schemaSecondaryAnimation.colliderGroups?.map(
       (schemaColliderGroup): VRMSpringBoneColliderGroup => {
         const node = threeNodes[schemaColliderGroup.node!];
-        const colliders = (schemaColliderGroup.colliders ?? []).map((schemaCollider, iCollider) => {
+        const colliders = (schemaColliderGroup.colliders ?? []).map((schemaCollider) => {
           const offset = new THREE.Vector3(0.0, 0.0, 0.0);
           if (schemaCollider.offset) {
             offset.set(

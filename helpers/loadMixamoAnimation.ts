@@ -1,6 +1,6 @@
 import { FBXLoader } from "three/examples/jsm/loaders/FBXLoader.js";
 import { mixamoVRMRigMap } from "./mixamoVRMRigMap";
-import { VRM } from "../pixiv-three-vrm/packages/three-vrm/src/index";
+import { VRM } from "../three-vrm/packages/three-vrm/src";
 import {
   AnimationClip,
   Quaternion,

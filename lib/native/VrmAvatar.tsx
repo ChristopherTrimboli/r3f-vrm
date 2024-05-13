@@ -1,4 +1,4 @@
-import React, {
+import {
   MutableRefObject,
   RefObject,
   Suspense,
@@ -314,7 +314,7 @@ const VrmAvatar = forwardRef(
         getRotation: () => {
           return gltfRef?.current?.rotation.toArray() || [0, 0, 0];
         },
-        talk: async (audioUrl: string, targetLookAt?: number[]) =>
+        talk: async (audioUrl: string) =>
           new Promise(async (resolve) => {
             if (!vrmRef.current || !animationMixer || !audioRef?.current) {
               return;

@@ -69,7 +69,7 @@ export class VRMLookAtLoaderPlugin implements GLTFLoaderPlugin {
       );
     }
 
-    gltf.userData.vrmLookAt = await this._import(gltf, vrmHumanoid, vrmExpressionManager);
+    gltf.userData.vrmLookAt = await this._import(vrmHumanoid, vrmExpressionManager);
   }
 
   /**
@@ -80,7 +80,6 @@ export class VRMLookAtLoaderPlugin implements GLTFLoaderPlugin {
    * @param expressions A {@link VRMExpressionManager} instance that represents the VRM
    */
   private async _import(
-    gltf: GLTF,
     humanoid: VRMHumanoid | null,
     expressions: VRMExpressionManager | null,
   ): Promise<VRMLookAt | null> {
@@ -88,12 +87,12 @@ export class VRMLookAtLoaderPlugin implements GLTFLoaderPlugin {
       return null;
     }
 
-    const v1Result = await this._v1Import(gltf, humanoid, expressions);
+    const v1Result = await this._v1Import(humanoid, expressions);
     if (v1Result) {
       return v1Result;
     }
 
-    const v0Result = await this._v0Import(gltf, humanoid, expressions);
+    const v0Result = await this._v0Import(humanoid, expressions);
     if (v0Result) {
       return v0Result;
     }
@@ -102,7 +101,6 @@ export class VRMLookAtLoaderPlugin implements GLTFLoaderPlugin {
   }
 
   private async _v1Import(
-    gltf: GLTF,
     humanoid: VRMHumanoid,
     expressions: VRMExpressionManager,
   ): Promise<VRMLookAt | null> {
@@ -173,7 +171,6 @@ export class VRMLookAtLoaderPlugin implements GLTFLoaderPlugin {
   }
 
   private async _v0Import(
-    gltf: GLTF,
     humanoid: VRMHumanoid,
     expressions: VRMExpressionManager,
   ): Promise<VRMLookAt | null> {
