@@ -1,6 +1,9 @@
 import React from "react";
+import Scene from "./Scene";
+import "./global.css";
+
 function App() {
-  return <h1>r3f-vrm</h1>;
+  return <Scene />;
 }
 
 export default App;
