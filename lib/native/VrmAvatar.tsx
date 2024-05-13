@@ -10,8 +10,8 @@ import React, {
   useRef,
   useState,
 } from "react";
-import { useFrame } from "@react-three/fiber";
-import { useGLTF } from "@react-three/drei";
+import { useFrame } from "@react-three/fiber/native";
+import { useGLTF } from "@react-three/drei/native";
 import { GLTF, GLTFLoader } from "three-stdlib";
 import {
   VRM,
@@ -20,7 +20,7 @@ import {
   VRMSpringBoneColliderShapeCapsule,
   VRMSpringBoneColliderShapeSphere,
   VRMExpressionPresetName,
-} from "../three-vrm/packages/three-vrm/src";
+} from "../../three-vrm/packages/three-vrm/src";
 import {
   AnimationAction,
   AnimationClip,
@@ -31,7 +31,7 @@ import {
   NumberKeyframeTrack,
   Vector3,
 } from "three";
-import { loadMixamoAnimation } from "../helpers/loadMixamoAnimation";
+import { loadMixamoAnimation } from "../../helpers/loadMixamoAnimation";
 
 export const emotions = {
   happy: VRMExpressionPresetName.Happy,

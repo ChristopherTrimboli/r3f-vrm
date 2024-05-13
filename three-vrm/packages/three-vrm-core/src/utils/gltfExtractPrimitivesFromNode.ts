@@ -1,5 +1,5 @@
 import type * as THREE from 'three';
-import type { GLTF } from 'three/examples/jsm/loaders/GLTFLoader.js';
+import type { GLTF } from 'three-stdlib';
 import { GLTF as GLTFSchema } from '@gltf-transform/core';
 
 function extractPrimitivesInternal(gltf: GLTF, nodeIndex: number, node: THREE.Object3D): THREE.Mesh[] | null {

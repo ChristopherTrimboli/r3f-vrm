@@ -1,4 +1,4 @@
-import { GLTFLoaderPlugin, GLTFParser } from 'three/examples/jsm/loaders/GLTFLoader.js';
+import { GLTFLoaderPlugin, GLTFParser } from 'three-stdlib';
 import * as HDREmissiveMultiplierSchema from '@pixiv/types-vrmc-materials-hdr-emissive-multiplier-1.0';
 import { GLTF as GLTFSchema } from '@gltf-transform/core';
 

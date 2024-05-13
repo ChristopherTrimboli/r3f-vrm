@@ -15,13 +15,17 @@
     "@pixiv/types-vrmc-vrm-animation-1.0": "^2.1.1",
     "@react-three/drei": "^9.105.6",
     "@react-three/fiber": "^8.16.6",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "three": "^0.164.1"
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-native": "^0.74.1",
+    "react-native-web": "^0.19.11",
+    "three": "^0.164.1",
+    "three-stdlib": "^2.30.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
+    "@types/react-native": "^0.73.0",
     "@typescript-eslint/eslint-plugin": "^7.2.0",
     "@typescript-eslint/parser": "^7.2.0",
     "@vitejs/plugin-react": "^4.2.1",

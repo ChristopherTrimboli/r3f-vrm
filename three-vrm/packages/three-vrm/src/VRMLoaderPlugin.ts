@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import { GLTF, GLTFLoaderPlugin, GLTFParser } from 'three/examples/jsm/loaders/GLTFLoader.js';
+import { GLTF, GLTFLoaderPlugin, GLTFParser } from 'three-stdlib';
 import {
   VRMExpressionLoaderPlugin,
   VRMFirstPersonLoaderPlugin,

@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import { GLTFParser } from 'three/examples/jsm/loaders/GLTFLoader.js';
+import { GLTFParser } from 'three-stdlib';
 import { MToonMaterialParameters } from './MToonMaterialParameters';
 import { setTextureColorSpace } from './utils/setTextureColorSpace';
 
