@@ -67,9 +67,9 @@ export class VRMCore {
    *
    * This function updates every VRM components.
    *
-   * @param delta deltaTime
+   * @param _delta deltaTime
    */
-  public update(delta: number): void {
+  public update(_delta: number): void {
     this.humanoid.update();
 
     if (this.lookAt) {

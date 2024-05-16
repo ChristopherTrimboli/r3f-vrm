@@ -20,6 +20,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
   },
-  "include": ["lib", "demo", "helpers", "constants"],
-  "references": [{ "path": "./tsconfig.node.json" }],
+  "include": ["lib", "demo", "helpers", "constants", "types.d.ts"],
+  "references": [{ "path": "./tsconfig.node.json" }]
 }
