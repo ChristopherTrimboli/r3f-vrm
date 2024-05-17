@@ -1,8 +1,8 @@
 import { Canvas } from "@react-three/fiber/native";
 import { PerspectiveCamera, Plane } from "@react-three/drei/native";
-import VrmAvatar from "../../lib/VrmAvatar";
+import { NativeVrmAvatar } from "../../dist";
 import { Matrix4, Vector3, Quaternion, Euler, MathUtils } from "three";
-import { defaultAnimations } from "../../constants/animations";
+import { defaultAnimations } from "../../src/constants/animations";
 
 export default function App() {
   return (
@@ -18,7 +18,7 @@ export default function App() {
 
         <pointLight position={[0, -10, -10]} decay={0} intensity={1} />
 
-        <VrmAvatar
+        <NativeVrmAvatar
           matrix={new Matrix4().compose(
             new Vector3(0, -1, 0),
             new Quaternion().setFromEuler(

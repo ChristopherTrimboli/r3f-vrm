@@ -1,8 +1,8 @@
 import { Canvas } from "@react-three/fiber";
 import { PerspectiveCamera, Plane } from "@react-three/drei";
-import { VrmAvatar } from "../dist/lib";
+import { VrmAvatar } from "../src";
 import { Matrix4, Vector3, Quaternion, Euler, MathUtils } from "three";
-import { defaultAnimations } from "../constants/animations";
+import { defaultAnimations } from "../src/constants/animations";
 
 export default function App() {
   return (
