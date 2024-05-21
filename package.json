@@ -1,5 +1,5 @@
 {
-  "version": "0.0.9",
+  "version": "0.0.10",
   "name": "r3f-vrm",
   "keywords": [
     "vrm",
@@ -52,17 +52,17 @@
     "three-stdlib": "2.30.0"
   },
   "devDependencies": {
-    "@pixiv/types-vrm-0.0": "2.1.1",
-    "@pixiv/types-vrmc-materials-hdr-emissive-multiplier-1.0": "2.1.1",
-    "@pixiv/types-vrmc-materials-mtoon-1.0": "2.1.1",
-    "@pixiv/types-vrmc-node-constraint-1.0": "2.1.1",
-    "@pixiv/types-vrmc-springbone-1.0": "2.1.1",
-    "@pixiv/types-vrmc-vrm-animation-1.0": "2.1.1",
+    "@pixiv/types-vrm-0.0": "2.1.2",
+    "@pixiv/types-vrmc-materials-hdr-emissive-multiplier-1.0": "2.1.2",
+    "@pixiv/types-vrmc-materials-mtoon-1.0": "2.1.2",
+    "@pixiv/types-vrmc-node-constraint-1.0": "2.1.2",
+    "@pixiv/types-vrmc-springbone-1.0": "2.1.2",
+    "@pixiv/types-vrmc-vrm-animation-1.0": "2.1.2",
     "@types/react": "18.2.66",
     "@types/react-dom": "18.2.22",
     "@types/react-native": "0.73.0",
-    "@typescript-eslint/eslint-plugin": "7.9.0",
-    "@typescript-eslint/parser": "7.9.0",
+    "@typescript-eslint/eslint-plugin": "7.10.0",
+    "@typescript-eslint/parser": "7.10.0",
     "@vitejs/plugin-react": "4.2.1",
     "eslint": "8.57.0",
     "eslint-plugin-react-hooks": "4.6.2",

@@ -1,13 +1,19 @@
-import { Canvas } from "@react-three/fiber/native";
-import { PerspectiveCamera, Plane } from "@react-three/drei/native";
-import { NativeVrmAvatar } from "../../dist";
+"use client";
+
+import { Canvas } from "@react-three/fiber";
+import { PerspectiveCamera, Plane } from "@react-three/drei";
+import { VrmAvatar } from "r3f-vrm";
 import { Matrix4, Vector3, Quaternion, Euler, MathUtils } from "three";
 import { defaultAnimations } from "../../src/constants/animations";
 
 export default function App() {
   return (
     <>
-      <Canvas>
+      <Canvas
+        style={{
+          height: "100vh",
+        }}
+      >
         <PerspectiveCamera
           makeDefault
           position={[0, 0.3, 1.75]}
@@ -18,7 +24,7 @@ export default function App() {
 
         <pointLight position={[0, -10, -10]} decay={0} intensity={1} />
 
-        <NativeVrmAvatar
+        <VrmAvatar
           matrix={new Matrix4().compose(
             new Vector3(0, -1, 0),
             new Quaternion().setFromEuler(
