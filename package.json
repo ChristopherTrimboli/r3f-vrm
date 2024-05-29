@@ -1,5 +1,5 @@
 {
-  "version": "0.0.10",
+  "version": "0.0.13",
   "name": "r3f-vrm",
   "keywords": [
     "vrm",
@@ -24,6 +24,11 @@
       "import": "./dist/index.es.js",
       "require": "./dist/index.cjs.js",
       "types": "./dist/index.d.ts"
+    },
+    "./native": {
+      "import": "./dist/native/index.es.js",
+      "require": "./dist/native/index.cjs.js",
+      "types": "./dist/native/index.d.ts"
     }
   },
   "files": [
@@ -34,7 +39,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc && vite build && vite build --config vite.config.native.ts",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
